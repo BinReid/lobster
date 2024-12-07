@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="search-container">
+        <h1>Поиск спортивных мероприятий</h1>
+        <form action="#" method="get">
+            <input type="text" name="query" placeholder="Поиск по названию мероприятия..." required>
+            <button type="submit">Поиск</button>
+        </form>
+        <div class="keyword-filters">
+            <h3>Ключевые слова</h3>
+            <button>Футбол</button>
+            <button>Теннис</button>
+            <button>Баскетбол</button>
+            <button>Бег</button>
+        </div>
+        <div class="events">
+            <h3>Список мероприятий</h3>
+            <div class="event-card">
+                <h4>Футбольный матч</h4>
+                <p>Дата: 15 декабря</p>
+                <p>Место: Стадион XYZ</p>
+            </div>
+            <div class="event-card">
+                <h4>Теннисный турнир</h4>
+                <p>Дата: 20 декабря</p>
+                <p>Место: Теннисный центр ABC</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  header {
+    background-color: #1f1f1f;
+  }
+  
+  header .logo {
+    color: #d62839;
+  }
+  
+  nav ul li a {
+    color: #e0e0e0;
+  }
+  
+  nav ul li a:hover {
+    color: #e63946;
+  }
+  
+  .welcome-text, .login-form, .profile-container {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+  
+  .event-card {
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+  
+  .event-title, .event-date, .event-location, .event-description {
+    color: #e0e0e0;
+  }
+  
+  .btn-register, .btn-submit, .btn-edit, .btn-logout {
+    background-color: #e63946;
+  }
+  
+  .btn-register:hover, .btn-submit:hover, .btn-edit:hover, .btn-logout:hover {
+    background-color: #d62839;
+  }
