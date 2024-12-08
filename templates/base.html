@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>События</title>
-    <link rel="icon" type="image/png" href="images/avatar.png">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Мессенджер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/messenger.css') }}">
 </head>
 <body>
     <header>
-        <div class="logo">CMSE</div>
         <nav>
-            <ul>
-                <li><a href="{{ url_for('home') }}">Главная</a></li>
-                <li><a href="{{ url_for('events') }}">События</a></li>
-                <li><a href="{{ url_for('profile') }}">Профиль</a></li>
-            </ul>
+            <a href="{{ url_for('messenger.conversations') }}">Чаты</a>
+            <a href="{{ url_for('auth.logout') }}">Выход</a>
         </nav>
     </header>
-
     <main>
         {% block content %}
         {% endblock %}
     </main>
-
-    <footer>
-        <p>&copy; 2024 CMSE BY PARADOX. Все права защищены.</p>
-    </footer>
+    <script src="{{ url_for('static', filename='js/messenger.js') }}"></script>
 </body>
 </html>
