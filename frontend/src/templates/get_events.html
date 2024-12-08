@@ -1,0 +1,25 @@
+<!-- frontend/templates/get_events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Events</title>
+</head>
+<body>
+    <h1>Get Events</h1>
+    <form method="POST">
+        <input type="text" name="keywords" placeholder="Enter keywords" required>
+        <button type="submit">Search</button>
+    </form>
+    {% if events %}
+        <h2>Events Found:</h2>
+        <ul>
+            {% for event in events %}
+                <li>{{ event.sport_name }} - {{ event.date_start }} to {{ event.date_end }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
